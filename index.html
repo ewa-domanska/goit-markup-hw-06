@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
           integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -18,18 +18,18 @@
 <body>
 <header class="header">
     <div class="container">
-        <a class="studio-color" href="/goit-markup-hw-05/index.html">
+        <a class="studio-color" href="/goit-markup-hw-06/index.html">
             <span class="web-color">Web</span>Studio
         </a>
         <nav class="navigation">
             <ul class="navigation-list list">
                 <li class="navigation-link agency-underline">
                     <a class="navigation-list-menu link effects-transition"
-                       href="/goit-markup-hw-05/index.html">Agencja</a>
+                       href="/goit-markup-hw-06/index.html">Agencja</a>
                 </li>
                 <li class="navigation-link">
                     <a class="navigation-list-menu link effects-transition"
-                       href="/goit-markup-hw-05/portfolio.html">Portfolio</a>
+                       href="/goit-markup-hw-06/portfolio.html">Portfolio</a>
                 </li>
                 <li class="navigation-link">
                     <a class="navigation-list-menu link effects-transition"
@@ -319,7 +319,7 @@
 
 <!--customers-->
 <section class="section">
-    <div class="container ">
+    <div class="container">
         <h2 class="secondary-header">Nasi klienci</h2>
     </div>
     <div>
@@ -383,7 +383,7 @@
         <address class="address-wrapper">
             <ul class="address-list list">
                 <li class="address-list-item">
-                    <a class="studio-color-small" href="/goit-markup-hw-05/index.html">
+                    <a class="studio-color-small" href="/goit-markup-hw-06/index.html">
                         <span class="web-color">Web</span>Studio</a>
                 <li class="address-list-item">
                     <a class="address-list-item" href="https://goo.gl/maps/2o7QPABCCGjatTRK9"
@@ -433,17 +433,63 @@
                     </li>
                 </ul>
             </div>
+            <div class="newsletter-form">
+                <p class="newsletter-form-title"> ZAPISZ SIĘ DO NEWSLETTERA </p>
+                <label class="newsletter">
+                    <input type="email" name="email" class="input-email" placeholder="E-mail"/>
+                    <button type="submit" class="modal-btn join-modal-button">Zapisz się</button>
+                </label>
+            </div>
         </address>
     </div>
 </footer>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
     <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
             <svg class="close-btn-icon">
-                <use href="images/icons.svg#icon-close-black" ></use>
+                <use href="images/icons.svg#icon-close-black"></use>
             </svg>
         </button>
+        <div class="modal-form">
+            <h2 class="modal-title">Zostaw swoje dane w formularzu poniżej</h2>
+            <form class="signup-form" autocomplete="on" novalidate>
+                <div class="field-wrapper">
+                    <label>
+                        Imię
+                        <input type="text" name="text" class="modal-inputs"/>
+                    </label>
+                </div>
+                <div class="field-wrapper">
+                    <label>
+                        Telefon
+                        <input type="tel" name="phone_number" class="modal-inputs"/>
+                    </label>
+                </div>
+                <div class="field-wrapper">
+                    <label>
+                        Email
+                        <input type="email" name="email" class="modal-inputs"/>
+                    </label>
+                </div>
+                <div class="field-wrapper">
+                    <label>
+                        Komentarz
+                        <textarea class="modal-feedback" name="feedback" rows="5"
+                                  placeholder="Wprowadź text"></textarea>
+                    </label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <label class="modal-checkbox-policy">
+                        <input type="checkbox" name="private-policy">
+                        Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>.
+                    </label>
+                </div>
+                <div class="modal-btn-submit">
+                    <button type="submit" class="modal-btn">Wyślij</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
