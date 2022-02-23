@@ -516,6 +516,15 @@ img {
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0.06em;
+    background-image: url("../images/send.svg");
+    background-repeat: no-repeat;
+    background-position: 85%;
+    vertical-align: top;
+}
+
+.button-content {
+    float: left;
+    padding-left: 36px;
 }
 
 
@@ -796,12 +805,40 @@ label {
     margin: 40px;
 }
 
+label {
+    position: relative;
+}
+
+.icon-input {
+    color: black;
+}
+
+label > .icon-input {
+    position: absolute;
+    top: 82%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+label:hover > .icon-input,
+label:focus > .icon-input {
+    color: var(--secondary-color);
+}
+
 .modal-inputs {
     width: 448px;
     height: 40px;
     box-sizing: border-box;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 14px 14px 14px 42px;
+    outline: none;
+}
+
+.modal-inputs:focus,
+.modal-inputs:hover {
+    border: 1px solid;
+    border-color: var(--secondary-color);
 }
 
 .modal-feedback {
@@ -809,25 +846,49 @@ label {
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-bottom: 20px;
+    outline: none;
+    resize: none;
+}
+
+.modal-feedback:hover,
+.modal-feedback:focus {
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    outline: none;
 }
 
 .checkbox-wrapper {
+    display: inline;
     margin-top: 20px;
     margin-bottom: 30px;
-    text-align: center;
 }
 
-.modal-checkbox-policy::after {
-    display: inline;
-    content: "";
-    width: 16px;
-    height: 16px;
+.modal-checkbox-policy {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:checked {
+    background-color: var(--secondary-color);
+    border: none;
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.blue-link {
+    color: var(--secondary-color)
 }
 
 .modal-btn-submit {
     text-align: center;
+    padding-top: 30px;
 }
