@@ -864,24 +864,38 @@ label:focus > .icon-input {
     margin-bottom: 30px;
 }
 
-.modal-checkbox-policy {
+.modal-checkbox-policy-text {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
 }
 
-.checkbox {
+.modal-checkbox-policy-text::before {
+    display: inline-block;
+    content: "";
     width: 16px;
     height: 16px;
+    outline: 1px solid var(--main-color);
+    border-radius: 2px;
 }
 
-.checkbox:checked {
+.modal-checkbox-policy:checked + .modal-checkbox-policy-text::before {
     background-color: var(--secondary-color);
-    border: none;
+    border: 3px solid var(--secondary-color);
     background-image: url("../images/check.svg");
     background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
+    outline: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
 
 .blue-link {

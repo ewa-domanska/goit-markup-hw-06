@@ -493,9 +493,11 @@
                     </label>
                 </div>
                 <div class="checkbox-wrapper">
-                    <label class="modal-checkbox-policy">
-                        <input type="checkbox" name="private-policy" class="checkbox">
-                         Oświadczam iż akceptuję <a class="blue-link" href="#">Regulamin </a> i <a class="blue-link" href="#">Politykę Prywatności</a>.
+                    <input type="checkbox" id="input-policy" name="private-policy" class="modal-checkbox-policy visually-hidden">
+                    <label class="modal-checkbox-policy-text" for="input-policy">
+                        Oświadczam iż akceptuję
+                        <a class="blue-link" href="#">Regulamin </a> i
+                        <a class="blue-link" href="#">Politykę Prywatności</a>.
                     </label>
                 </div>
                 <div class="modal-btn-submit">
@@ -505,7 +507,6 @@
         </div>
     </div>
 </div>
-
 <script src="./js/modal.js"></script>
 </body>
 </html>
